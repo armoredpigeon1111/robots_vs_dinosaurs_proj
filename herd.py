@@ -8,7 +8,11 @@ class Herd:
     #Constructor
     def __init__(self):
         self.dino_list = []
+        self.create_herd()
 
     #methods
     def create_herd(self, dinosaur):
-        self.dino_list.append(dinosaur)
+        trex = Dinosaur("T-Rex", 20)
+        stegosaurus = Dinosaur("Stegosaurus", 20)
+        triceratops = Dinosaur("Triceratops", 20)
+        self.dino_list.append(trex)
