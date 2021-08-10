@@ -8,6 +8,7 @@ class Fleet:
     #Constructor
     def __init__(self):
         self.robots_list = []
+        self.create_fleet()
 
     #methods
     def create_fleet(self):
@@ -17,3 +18,4 @@ class Fleet:
         self.robots_list.append(robobob)
         self.robots_list.append(robotom)
         self.robots_list.append(robocarl)
+        
