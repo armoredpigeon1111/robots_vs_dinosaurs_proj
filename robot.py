@@ -3,6 +3,7 @@
 #Create Date: August 10, 2021
 
 from weapon import Weapon
+from dinosaur import Dinosaur
 
 
 class Robot:
@@ -10,7 +11,7 @@ class Robot:
     def __init__(self, name):
         self.name = name
         self.health = 100
-        self.weapon = "weapon"
+        self.weapon = Weapon("Sword", 100)
 
     #Methods
     def attack(self, dinosaur):
