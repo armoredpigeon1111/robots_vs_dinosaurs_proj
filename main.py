@@ -11,3 +11,4 @@ sword = Weapon("Sword", 10)
 laser = Weapon("Laser", 20)
 grenade = Weapon("Grenade", 30)
 
+

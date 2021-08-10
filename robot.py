@@ -11,4 +11,4 @@ class Robot:
 
     #Methods
     def attack(self, dinosaur):
-        
+        dinosaur.health -= 10
