@@ -18,8 +18,11 @@ class Fleet:
         self.robots_list.append(robobob)
         self.robots_list.append(robotom)
         self.robots_list.append(robocarl)
-        robobob.add_weapon()
-        robotom.add_weapon()
-        robocarl.add_weapon()
+        robobob.add_weapons()
+        robotom.add_weapons()
+        robocarl.add_weapons()
+
+
+    
 
     

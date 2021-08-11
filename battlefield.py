@@ -22,7 +22,13 @@ class Battlefield():
     def display_welcome(self):
         print("Welcome to Robots Vs. Dinosaurs!")
 
+        
+
     def battle(self):
+
+        for robo in self.fleet.robots_list:
+            index = int(input("Select a weapon for " + robo.name + ". Enter 1 for sword, 2 for laser, 3 for gun: ")) -1
+            robo.weapon = robo.get_a_weapon(index)
         
         while len(self.herd.dino_list) > 0 and len(self.fleet.robots_list) > 0:
 
