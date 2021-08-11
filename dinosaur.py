@@ -2,7 +2,7 @@
 #Author: Richard Fleming
 #Create Date: August 10, 2021
 
-from robot import Robot
+
 
 class Dinosaur:
     #Constructor
@@ -13,5 +13,5 @@ class Dinosaur:
 
     #Methods
     def attack(self, robot):
-        robot.health -= 50
+        robot.health -= self.attack_power
         
