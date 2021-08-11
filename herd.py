@@ -18,3 +18,6 @@ class Herd:
         self.dino_list.append(trex)
         self.dino_list.append(stegosaurus)
         self.dino_list.append(triceratops)
+        trex.add_attack()
+        stegosaurus.add_attack()
+        triceratops.add_attack()
