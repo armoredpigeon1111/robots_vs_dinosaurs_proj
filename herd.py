@@ -12,9 +12,9 @@ class Herd:
 
     #methods
     def create_herd(self):
-        trex = Dinosaur("T-Rex", 30)
-        stegosaurus = Dinosaur("Stegosaurus", 20)
-        triceratops = Dinosaur("Triceratops", 20)
+        trex = Dinosaur("T-Rex")#, 30)
+        stegosaurus = Dinosaur("Stegosaurus")#, 20)
+        triceratops = Dinosaur("Triceratops")#, 20)
         self.dino_list.append(trex)
         self.dino_list.append(stegosaurus)
         self.dino_list.append(triceratops)

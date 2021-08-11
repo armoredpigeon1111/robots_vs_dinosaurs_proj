@@ -54,7 +54,11 @@ class Battlefield():
 
 
     def dino_turn(self):
-        self.herd.dino_list[0].attack(self.fleet.robots_list[0])
+
+        index = int(input("Select a weapon for " + self.herd.dino_list[0].name + ". Enter 1 for chomp, 2 for stomp, 3 for romp: ")) -1
+        self.herd.dino_list[0].get_attack(index)
+
+        self.herd.dino_list[0].attack(self.fleet.robots_list[0], index)
         print(self.herd.dino_list[0].name + " attacked " + self.fleet.robots_list[0].name + "!")
         print(self.fleet.robots_list[0].name + " has " + str(self.fleet.robots_list[0].health) + " health left.")
         if(self.fleet.robots_list[0].health <= 0):
