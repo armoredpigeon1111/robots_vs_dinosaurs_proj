@@ -12,10 +12,12 @@ class Robot:
         self.name = name
         self.health = 100
         self.weapon = []
+        self.energy = 100
 
     #Methods
     def attack(self, dinosaur):
         dinosaur.health -= self.weapon.attack_power
+        self.energy -= 10
         
     def add_weapons(self):
         sword = Weapon("Sword", 30)
