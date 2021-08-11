@@ -13,5 +13,5 @@ class Dinosaur:
 
     #Methods
     def attack(self, robot):
-        robot.health -= 10
-        print("dino attacked")
+        robot.health -= 50
+        

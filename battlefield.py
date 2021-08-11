@@ -25,9 +25,19 @@ class Battlefield():
     def battle(self):
         
         while len(self.herd.dino_list) > 0 and len(self.fleet.robots_list) > 0:
-            Battlefield.dino_turn(self)
-            if(len(self.herd.dino_list) > 0 and len(self.fleet.robots_list) > 0):
+
+            firstAttack = input("Who do you want to attack first robots or dinos?").lower()
+            
+            if(firstAttack == "dinos"):
+                Battlefield.dino_turn(self)
+                if(len(self.herd.dino_list) > 0 and len(self.fleet.robots_list) > 0):
+                    Battlefield.robo_turn(self)
+            else:
                 Battlefield.robo_turn(self)
+                if(len(self.herd.dino_list) > 0 and len(self.fleet.robots_list) > 0):
+                    Battlefield.dino_turn(self)
+
+
         if len(self.herd.dino_list) == 0:
             self.display_winners("Robots")
         elif len(self.fleet.robots_list) == 0:
